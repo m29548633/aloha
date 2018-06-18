@@ -247,8 +247,8 @@
             }
 
         footer {
-            background-color: #bfbfbf;
-            min-height: 300px;
+            background-color: #E37E4B;
+            min-height: 200px;
         }
 
             footer > table {
@@ -268,7 +268,8 @@
             margin-top: 15px;
             font-size: 18px;
             text-align: center;
-            color: #777;
+            color: white;
+            margin: 0 auto;
         }
 
 
@@ -303,7 +304,7 @@
                 <tr>
                     <td>
                         <img src="logo.png" style="width:200px" />
-                        </td>
+                    </td>
                     <td style="width:300px;">
                         <div style="position:absolute">
                             <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;">New</a>
@@ -377,20 +378,54 @@
             本次賽事天氣狀況多變，除了雷雨，還發生小土石流影響比賽路線。對選手不只是體力，更是意志力的考驗。
         </p>
     </article>
-    <div style="background-color:#E37E4B;height:200px">
-        <figure style="position:relative;left:10px;top:70px;">
-            <img src="logo.png" style="width:200px" />
-        </figure>
-        <span style="padding:20px 50px 70px 900px">
-            About us
-        </span>
-        <span style="padding:20px 50px 70px 0px">
-            Contact us
-        </span>
-        <span style="padding:20px 113px 70px 0px">
-            Privacy Policy
-        </span>
-    </div>
+
+    <footer >
+        <table class="hidden-on-mobile">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="logo.png" style="width:100px" />
+                    </td>
+                    <td>
+                        <div class="footer-text">About us</div>
+                    </td>
+                    <td>
+
+                        <div class="footer-text">Contact us</div>
+                    </td>
+                    <td>
+                        <div class="footer-text">Privacy Policy</div>
+                    </td>
+                </tr>
+            </tbody>
+            <table class="shown-on-mobile">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="logo.png" style="width:100px" />
+                        </td>
+                        <td>
+                            <div class="footer-text">About us</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <div class="footer-text">Contact us</div>
+                        </td>
+                        <td>
+                            <div class="footer-text">Privacy Policy</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </table>
+    </footer>
+
 </body>
+
+
+
+
 
 </html>
