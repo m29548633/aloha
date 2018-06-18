@@ -1,17 +1,336 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <style>
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            background-color: #fff;
+        }
+
+        a {
+            color: #2d2d2d;
+            text-decoration: none;
+        }
+
+        header,
+        article > header {
+            max-width: calc(270/320*100%);
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            header {
+                width: 678px;
+            }
+
+            article,
+            article > header {
+                max-width: 678px;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            header {
+                width: 900px;
+            }
+
+            article,
+            article > header {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+        }
+
+        header > table {
+            width: 100%;
+        }
+
+        article > header > span {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2.25;
+        }
+
+        article > header > h1 {
+            margin-top: 11px;
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 1.32;
+        }
+
+        article {
+            color: #2d2d2d;
+        }
+
+            article > figure {
+                margin: 40px 0 0 0;
+            }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            article > figure {
+                width: 678px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .float-right {
+                float: left;
+                width: 300px;
+                margin-top: 40px;
+                margin-right: 40px;
+                margin-bottom: 50px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            article > figure {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .float-right {
+                float: right;
+                width: 360px;
+                margin-top: 40px;
+                margin-left: 40px;
+                margin-bottom: 50px;
+            }
+        }
+
+        article > p,
+        article > h2,
+        article > blockquote,
+        article > ul,
+        article figcaption,
+        article > div,
+        article > header {
+            max-width: calc(270/320*100%);
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            article > p,
+            article > h2,
+            article > blockquote,
+            article > ul,
+            article figcaption,
+            article > div,
+            article > header,
+            article > ul {
+                width: 550px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            article > p,
+            article > h2,
+            article > blockquote,
+            article > ul,
+            article figcaption,
+            article > div,
+            article > header {
+                max-width: 756px;
+            }
+
+            article > ul {
+                width: 700px;
+            }
+        }
+
+        article > ul {
+            width: 100%;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        article > p,
+        article > blockquote {
+            font-size: 18px;
+            line-height: 2.0;
+            letter-spacing: 0.9px;
+            margin-top: 40px;
+        }
+
+        article > blockquote {
+            padding-left: 21px;
+            color: #6d6d6d;
+            border-left: 1px solid #6d6d6d;
+        }
+
+        article > h2 {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+            line-height: 1.64;
+            margin-top: 40px;
+        }
+
+        article figcaption {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.8px;
+            color: #6d6d6d;
+            margin-top: 15px;
+        }
+
+        .header {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 25px;
+            background-color: #e1e1e1;
+        }
+
+        .menu {
+            width: 22px;
+            height: 22px;
+            background-color: #e1e1e1;
+        }
+
+        .author {
+            margin-right: 30px;
+            font-size: 15px;
+            line-height: 2.25;
+        }
+
+        .introduction {
+            font-size: 22px;
+            line-height: 1.82;
+            letter-spacing: 1.6px;
+            text-align: justify;
+            margin-top: 30px;
+        }
+
+        .related-text {
+            font-size: 16px;
+            line-height: 2.25;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .related-items {
+            margin-bottom: 60px;
+        }
+
+        .related-item {
+            background-color: #e1e1e1;
+            margin-top: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+            .related-item > img {
+                width: 20%;
+                vertical-align: middle;
+            }
+
+            .related-item > div {
+                display: inline-block;
+                width: 70%;
+                padding-left: 20px;
+                vertical-align: middle;
+                line-height: 1.5;
+            }
+
+        footer {
+            background-color: #E37E4B;
+            min-height: 200px;
+        }
+
+            footer > table {
+                border-spacing: 45px;
+                width: 100%;
+            }
+
+        .footer-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #777;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            margin: 0 auto;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            table.hidden-on-mobile {
+                display: none;
+            }
+
+            table.shown-on-mobile {
+                display: table;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            table.hidden-on-mobile {
+                display: table;
+                max-width: 770px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            table.shown-on-mobile {
+                display: none;
+            }
+        }
+    </style>
     </head>
     <body>
-<header>
-    <img src="logo.png" width="250px" height="auto"/>
-    <a href="https://www.youtube.com/watch?v=QqjjclzXBpI"style="text-decoration:none;margin:0px 50px 0px 500px;position:relative;bottom:40px">New</a>
-    <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" target="_blank" style="text-decoration:none;margin:0px 50px 0px 0px;position:relative;bottom:40px">Popular</a>
-    <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="text-decoration:none;margin:0px 50px 0px 0px;position:relative;bottom:40px">Opinion</a>
-    <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="text-decoration:none;position:relative;bottom:40px">Video</a>
-</header>
-<img src="冰球1.jpg" width="1334px" height="auto"/>
-<div style="font-size:40px;font-weight:bold;line-height:normal;letter-spacing:2.5;padding:10px 10px 10px 10px">冰球場上展默契，戰神隊大獲全勝。</div>
+            <header class="header">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="logo.png" style="width:200px" />
+                                </td>
+                             </tr>
+                            <tr>
+                                <td>
+                                   <div></div>
+                                </td>
+                                <td style="width:300px;">
+                                    <div style="position:absolute">
+                                        <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;">New</a>
+                                        <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;">Popular</a>
+                                        <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;">Opinion</a>
+                                        <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;">Video</a>
+                                    </div>
+                                </td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+                </header>
+                <header>
+                        <span>冰球</span>
+                        <h1 style="color:#2F4F4F">冰球場上展默契，戰神隊大獲全勝。</h1>
+                </header>
+                <article>
+                        <figure>
+                                <img src="冰球1.jpg" alt="冰球1" style="width:100%" />
+                                <figcaption>我是圖說啦幹！</figcaption>
+                            </figure>
 <p>
     【記者邱品懿台北報導】「105學年度全國冰球錦標賽」公開組賽事3日於台北小巨蛋開打，「戰神隊」一路過關斬將獲得冠軍。戰神隊與常勝軍「銀色野獸隊」皆由「台北銀色野獸冰球俱樂部」培育，創立初期即有優異成績，聘請外國教練後球技更上層樓。
 </p>
@@ -30,7 +349,10 @@
 <p>
     冰球速度快且常有衝撞動作，對男生來說已經是很大的體力消耗，女子球員要做到一樣的程度就必須更加努力。銀獸隊守門員、真理大學劉安祐從幼稚園開始接觸冰球，擔任守門員的位置從沒變過。劉安祐小時候被球打到、被撞，都會忍住不說，回家爸媽才發現大塊瘀青，送去醫院還被懷疑是家暴。劉安祐把比賽上受的傷、撞出的瘀青視為紀念品，「算是一種另類的回憶吧？」多年的練習讓她已經習慣碰撞與瘀青。
 </p>
-<img src="冰球2.jpg" width="1334px" height="auto"/>
+<figure>
+        <img src="冰球2.jpg" alt="冰球2" style="width:100%" />
+        <figcaption>我是圖說啦幹！</figcaption>
+    </figure>
 <p>
         【記者邱品懿台北報導】「105學年度全國冰球錦標賽」公開組賽事3日於台北小巨蛋開打，「戰神隊」一路過關斬將獲得冠軍。戰神隊與常勝軍「銀色野獸隊」皆由「台北銀色野獸冰球俱樂部」培育，創立初期即有優異成績，聘請外國教練後球技更上層樓。
     </p>
@@ -49,8 +371,48 @@
     <p>
         冰球速度快且常有衝撞動作，對男生來說已經是很大的體力消耗，女子球員要做到一樣的程度就必須更加努力。銀獸隊守門員、真理大學劉安祐從幼稚園開始接觸冰球，擔任守門員的位置從沒變過。劉安祐小時候被球打到、被撞，都會忍住不說，回家爸媽才發現大塊瘀青，送去醫院還被懷疑是家暴。劉安祐把比賽上受的傷、撞出的瘀青視為紀念品，「算是一種另類的回憶吧？」多年的練習讓她已經習慣碰撞與瘀青。
     </p>
-<div style="background-color:white;padding:0px 1334px 0px 0px"></div>
-<figure style="position:relative;left:10px;top:70px;z-index:1"><img src="logo.png" width="250px" height="auto"/></figure>
-<span style="background-color:chocolate;padding:70px 50px 70px 900px">About us</span><span style="background-color:chocolate;padding:70px 50px 70px 0px">Contact us</span><span style="background-color:chocolate;padding:70px 113px 70px 0px">Privacy Policy</span>
+    </article>
+    <footer >
+            <table class="hidden-on-mobile">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="logo.png" style="width:100px" />
+                        </td>
+                        <td>
+                            <div class="footer-text">About us</div>
+                        </td>
+                        <td>
+    
+                            <div class="footer-text">Contact us</div>
+                        </td>
+                        <td>
+                            <div class="footer-text">Privacy Policy</div>
+                        </td>
+                    </tr>
+                </tbody>
+                <table class="shown-on-mobile">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="logo.png" style="width:100px" />
+                            </td>
+                            <td>
+                                <div class="footer-text">About us</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+    
+                                <div class="footer-text">Contact us</div>
+                            </td>
+                            <td>
+                                <div class="footer-text">Privacy Policy</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+        </footer>
     </body>
 </html>
