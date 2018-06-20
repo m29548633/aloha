@@ -1,0 +1,101 @@
+body {
+    font-family: "Microsoft JhengHei" !important;
+}
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.jumbotron, .jumbotron-fluid {
+    background: url(水電工banner原圖.png);
+    object-fit: cover;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 0 !important;
+}
+.jumbotron h1 {
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+.jumbotron p {
+    font-weight: 900;
+    color: #E37E4B;
+    margin-bottom: 0;
+}
+.container-fluid {
+    padding: 0 !important;
+}
+.col-12:nth-child(2n) {
+    background-color: #271906;
+    color: #E37E4B;
+}
+.col-12 {
+    background-color: #E37E4B;
+    text-align: left;
+    padding: 80px !important;
+    color: #fff;
+}
+.col-12 h3 {
+    font-weight: 900;
+}
+.two-col {
+    display: flex;
+}
+.row {
+    margin: 0 auto !important;
+}
+.col-12 ul {
+    list-style: none;
+    padding: 0;
+}
+.col-12 li {
+    color: gray;
+    margin-bottom: 10px;
+}
+.engineer-icon-area {
+    text-align: center;
+}
+.engineer-icon-area img {
+    width: 64px;
+    height: 64px;
+}
+.engineer-icon-area img:last-child {
+    width: 100px;
+}
+.engineer-icon-area div {
+    margin-bottom: 30px;
+}
+.big {
+    animation-delay: .3s;
+}
+.mid {
+    animation-delay: .8s;
+}
+.small {
+    animation-delay: 1.3s;
+}
+.tag {
+    animation-delay: 1.8s;
+}
+.engineer-icon-area .exp {
+    position: absolute;
+    width: 0;
+    height: 150px;
+    transition: all .5s;
+    top:-43px;
+    right: 0;
+}
+.engineer-icon-area .big:hover .big-exp {
+    width: 300px;
+    display: block;
+}
+.engineer-icon-area .mid:hover .mid-exp {
+    width: 300px;
+    display: block;
+}
+.engineer-icon-area .small:hover .small-exp {
+    width: 300px;
+    display: block;
+}
