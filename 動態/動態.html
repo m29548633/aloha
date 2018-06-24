@@ -30,6 +30,32 @@
                 width: 50px;
             }
         }
+
+        @media (max-width: 480px) {
+            .display-4 {
+                font-size: 32;
+            }
+            .lead {
+                font-size: 12.5;
+            }
+        }
+
+        /* @media (min-width: 1280px) {
+            .col-12 p {
+                margin-left: 30rem;
+                margin-right:30rem;
+            }
+
+        } */
+
+            
+        @media (max-width: 412px) {
+            .col-12 p {
+                margin-left: 0;
+                margin-right: 0;
+                font-size:20px;
+            }
+        }
     </style>
 
 </head>
@@ -38,7 +64,8 @@
     <div class="main-container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">水電專業缺工危機 技術人才大斷層</h1>
+                <h1 class="display-4" style="margin-bottom: 2">水電專業缺工危機 </h1>
+                <h1 class="display-4" style="margin-top: 2">技術人才大斷層</h1>
                 <p class="lead">專題記者劉祐齊、陳亭蓉、陳詩妤、曾智怡、周瑩慈綜合報導</p>
             </div>
         </div>
@@ -79,25 +106,25 @@
                         </h3>
                         <div id="for-engineer-animation" class="engineer-icon-area animation-block">
                             <div class="big animated fadeInDown">
-                                <img class="big-exp exp" src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\大包解釋.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\skyline大包.png" alt="">
-                                <img class="tag animated tada infinite" src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\tag大包.png" alt="">
+                                <img class="big-exp exp" src="大包解釋.png" alt="">
+                                <img src="skyline大包.png" alt="">
+                                <img class="tag animated tada infinite" src="tag大包.png" alt="">
                             </div>
                             <div class="mid animated fadeInDown">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\中包解釋.png" alt="" class="mid-exp exp">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\house中包.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\house中包.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\house中包.png" alt="">
-                                <img class="tag animated tada infinite" src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\tag中包.png" alt="">
+                                <img src="中包解釋.png" alt="" class="mid-exp exp">
+                                <img src="house中包.png" alt="">
+                                <img src="house中包.png" alt="">
+                                <img src="house中包.png" alt="">
+                                <img class="tag animated tada infinite" src="tag中包.png" alt="">
                             </div>
                             <div class="small animated fadeInDown">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\小包解釋.png" alt="" class="small-exp exp">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\Engineer小包.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\Engineer小包.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\Engineer小包.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\Engineer小包.png" alt="">
-                                <img src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\Engineer小包.png" alt="">
-                                <img class="tag animated tada infinite" src="C:\Users\user\Documents\GitHub\aloha\動態\動態化2：水電專業分工icon\tag小包.png" alt="">
+                                <img src="小包解釋.png" alt="" class="small-exp exp">
+                                <img src="Engineer小包.png" alt="">
+                                <img src="Engineer小包.png" alt="">
+                                <img src="Engineer小包.png" alt="">
+                                <img src="Engineer小包.png" alt="">
+                                <img src="Engineer小包.png" alt="">
+                                <img class="tag animated tada infinite" src="tag小包.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -192,65 +219,42 @@
             </div>
         </article>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-            crossorigin="anonymous"></script>
-        <!-- <script>
-            $.fn.isInViewport = function(){
-                var elementTop = $(this).offset().top();
-                var elementBottom = elementTop + $(this).outerHeight();
-                var viewportTop = $(window).scrollTop();
-                var viewportBottom = viewportTop +$(window).height();
-                return elementBottom > viewportTop && elementTop < viewportBottom;
-            };
 
-            $(window).on("resize scroll", function(){
-                $(".animation-block").each(function(){
-                    var activeArea = $(this).attr("id");
-                    if($(this).isInViewport()){
-                        $("#" + activeArea).addClass("to-animate");
-                    }
-                });
-            });
-        </script>    -->
-        <!-- <script>
-            $.fn.isInViewport = function () {
-                var elementTop = $(this)
-                    .offset()
-                    .top;
-                var elementBottom = elementTop + $(this)
-                    .outerHeight();
-
-                var viewportTop = $(window)
-                    .scrollTop();
-                var viewportBottom = viewportTop + $(window).height();
-                return elementBottom > viewportTop && elementTop < viewportBottom;
-            };
-            // $(window).on("resize scroll", function(){
-            //     var animationBlock = $(".animation-block");
-            //     for(var i = 0; i < animationBlock.lenth; i++){
-            //         var activeArea = $(this).attr("id");
-            //         if($(this).isInViewport()){
-            //             $("#" + activeArea).addClass("to-animate")
-            //         }
-            //     }
-            // })
-
-            $(window)
-                .on('resize scroll', function () {
-                    $('.animation-block')
-                        .each(function () {
-                            var activeArea = $(this)
-                                .attr('id');
-                            if ($(this)
-                                .isInViewport()) {
-                                $('#' + activeArea)
-                                    .addClass('to-animate');
-                            }
-                        });
-                });
-        </script> -->
 
     </div>
+
+    <!-- 以下的程式碼是用來計算 <div id="area-*"> 是否出現在 viewport 裡，如果在 viewport 裡，則在會增加 to-animate 的 class 在 <div id="area-*"> 上 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+ crossorigin="anonymous"></script>
+
+<script>
+$.fn.isInViewport = function () {
+    var elementTop = $(this)
+        .offset()
+        .top;
+    var elementBottom = elementTop + $(this)
+        .outerHeight();
+
+    var viewportTop = $(window)
+        .scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window)
+    .on('resize scroll', function () {
+        $('.animation-block')
+            .each(function () {
+                var activeArea = $(this)
+                    .attr('id');
+                if ($(this)
+                    .isInViewport()) {
+                    $('#' + activeArea)
+                        .addClass('to-animate');
+                }
+            });
+    });
+</script>
 
 
    
@@ -259,8 +263,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
+
+
 
 
 </html>

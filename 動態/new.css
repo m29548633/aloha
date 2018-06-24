@@ -1,8 +1,9 @@
 body {
     font-family: "Microsoft JhengHei" !important;
+    
 }
 .main-container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .jumbotron, .jumbotron-fluid {
@@ -37,6 +38,13 @@ body {
     padding: 80px !important;
     color: #fff;
 }
+
+.col12 p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
 .col-12 h3 {
     font-weight: 900;
 }
