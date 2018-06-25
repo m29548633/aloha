@@ -2,6 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <title>鐵人三項-Paradise of sport</title>
     <style>
 
         * {
@@ -310,9 +311,17 @@
            src:url("PingFang-Jian-ChangGuiTi-2.ttf");
        }
 
+       @font-face{
+           font-family:"PingFang-ExtraLight";
+           src:url("PingFang-ExtraLight-1.ttf");
+       }
+
        .mycss{
            font-family:"Josefinsans";
-           font-size:20px;     
+           font-size:20px;
+           color:#DB6346;
+           text-align:right;     
+           padding:5px;
        }
        .h1{
            font-family:"PingFang-Bold";
@@ -327,7 +336,82 @@
            font-family:"PingFang-Jian-ChangGuiTi";
            color:#665D5D;
        }
+       .topic in{
+           font-family:"PingFang-ExtraLight";
+           font-size:20px;
+       }
 
+       ul { /* 取消ul預設的內縮及樣式 */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.drop-down-menu {
+        border: #ccc 1px solid;
+        display: inline-block;
+        font-family: "PingFang-ExtraLight","Open Sans","Arial", sans-serif;
+        font-size: 15px;
+    }
+
+    ul.drop-down-menu li {
+        position: relative;
+        white-space: nowrap;
+        border-right: #ccc 1px solid;
+    }
+
+    ul.drop-down-menu > li:last-child {
+        border-right: none;
+    }
+
+    ul.drop-down-menu > li {
+        float: left; /* 只有第一層是靠左對齊*/
+    }
+
+     ul.drop-down-menu a {
+        background-color: #FFFAFA;
+        color: #DB6346;
+        display: block;
+        padding: 0 30px;
+        text-decoration: none;
+        line-height: 40px;
+
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+        background-color: #DB6346;
+        color: #fff;
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        background-color: #DB6346;
+        color: #fff;
+    }
+    ul.drop-down-menu ul {
+        border: #ccc 1px solid;
+        position: absolute;
+        z-index: 99;
+        left: -1px;
+        top: 100%;
+       min-width: 180px;
+       display:none;
+    }
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        display: block;
+    }
+
+    ul.drop-down-menu ul li {
+        border-bottom: #ccc 1px solid;
+    }
+
+    ul.drop-down-menu ul li:last-child {
+        border-bottom: none;
+    }
+
+    ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+        z-index: 999;
+        top: 10px;
+        left: 90%;
+    }
     </style>
 </head>
 <body>
@@ -338,16 +422,27 @@
                     <td>
                         <img src="logo.png" style="width:200px" />
                     </td>
-                    <td style="width:300px;">
-                        <div style="position:absolute"></div>
-                            <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;" class="mycss">New </a>
-                            &emsp;
-                            <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;" class="mycss">Popular</a>
-                            &emsp;
-                            <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;" class="mycss">Opinion</a>
-                            &emsp;
-                            <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;" class="mycss">Video</a>
-                        </div>
+                    <td>
+                            <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;margin-left:250px" class="mycss">New </a>
+                            
+                            <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;margin-left:15px" class="mycss">Popular</a>
+                            
+                            <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;margin-left:15px" class="mycss">Opinion</a>
+                            
+                            <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;margin-left:15px" class="mycss">Video</a>
+                            </td>
+                    <td>
+                        <ul class="drop-down-menu">
+                                <li>
+                                    <a href="#" class="mycss">Topic</a>
+                                    <ul>
+                                        <li><a href="#" class="topic in">三鐵</a></li>
+                                        <li><a href="#" class="topic in">冰球</a></li>
+                                        <li><a href="#" class="topic in">跆拳道</a></li>
+                                        <li><a href="#" class="topic in">疊杯</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                     </td>
                  </tr>
 

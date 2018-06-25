@@ -2,298 +2,332 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
-    <style>
+            <title>疊杯-Paradise of sport</title>
+            <style>
 
-        * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-            background-color: #fff;
-        }
-
-        a {
-            color: #2d2d2d;
-            text-decoration: none;
-        }
-
-        header,
-        article > header {
-            max-width: calc(270/320*100%);
-            margin: 0 auto;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            header {
-                width: 678px;
+                    * {
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+            
+                    body {
+                        font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+                        background-color:#FFFAFA;
+                    }
+            
+                    a {
+                        color: #2d2d2d;
+                        text-decoration: none;
+                    }
+            
+                    header,
+                    article > header {
+                        max-width: calc(270/320*100%);
+                        margin: 0 auto;
+                    }
+            
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        header {
+                            width: 678px;
+                        }
+            
+                        article,
+                        article > header {
+                            max-width: 678px;
+                            margin: 0 auto;
+                        }
+                    }
+            
+                    @media screen and (min-width: 1024px) {
+                        header {
+                            width: 900px;
+                        }
+            
+                        article,
+                        article > header {
+                            max-width: 900px;
+                            margin: 0 auto;
+                        }
+                    }
+            
+                    header > table {
+                        width: 100%;
+                    }
+            
+                    article > header > span {
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 2.25;
+                    }
+            
+                    article > header > h1 {
+                        margin-top: 11px;
+                        font-size: 34px;
+                        font-weight: bold;
+                        line-height: 1.32;
+                    }
+            
+                    article {
+                        color: #2d2d2d;
+                    }
+            
+                        article > figure {
+                            margin: 0 0 0 0;
+                        }
+            
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        article > figure {
+                            width: 678px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+            
+                        .float-right {
+                            float: left;
+                            width: 300px;
+                            margin-top: 40px;
+                            margin-right: 40px;
+                            margin-bottom: 50px;
+                        }
+                    }
+            
+                    @media screen and (min-width: 1024px) {
+                        article > figure {
+                            width: 900px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+            
+                        .float-right {
+                            float: right;
+                            width: 360px;
+                            margin-top: 40px;
+                            margin-left: 40px;
+                            margin-bottom: 50px;
+                        }
+                    }
+            
+                    article > p,
+                    article > h2,
+                    article > blockquote,
+                    article > ul,
+                    article figcaption,
+                    article > div,
+                    article > header {
+                        max-width: calc(270/320*100%);
+                        margin: 0 auto;
+                    }
+            
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        article > p,
+                        article > h2,
+                        article > blockquote,
+                        article > ul,
+                        article figcaption,
+                        article > div,
+                        article > header,
+                        article > ul {
+                            width: 550px;
+                        }
+                    }
+            
+                    @media screen and (min-width: 1024px) {
+                        article > p,
+                        article > h2,
+                        article > blockquote,
+                        article > ul,
+                        article figcaption,
+                        article > div,
+                        article > header {
+                            max-width: 756px;
+                        }
+            
+                        article > ul {
+                            width: 700px;
+                        }
+                    }
+            
+                    article > ul {
+                        width: 100%;
+                        list-style-type: none;
+                        padding-left: 0;
+                    }
+            
+                    article > p,
+                    article > blockquote {
+                        font-size: 18px;
+                        line-height: 2.0;
+                        letter-spacing: 0.9px;
+                        margin-top: 40px;
+                    }
+            
+                    article > blockquote {
+                        padding-left: 21px;
+                        color: #6d6d6d;
+                        border-left: 1px solid #6d6d6d;
+                    }
+            
+                    article > h2 {
+                        font-size: 22px;
+                        font-weight: bold;
+                        letter-spacing: 1.1px;
+                        line-height: 1.64;
+                        margin-top: 40px;
+                    }
+            
+                    article figcaption {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        letter-spacing: 0.8px;
+                        color: #6d6d6d;
+                        margin-top: 15px;
+                    }
+            
+                    .header {
+                        background-color:#C4A39D;
+                    }
+            
+            
+                    .logo {
+                        width: 100px;
+                        height: 25px;
+                        background-color: #e1e1e1;
+                    }
+            
+                    .menu {
+                        width: 22px;
+                        height: 22px;
+                        background-color: #e1e1e1;
+                    }
+            
+                    .author {
+                        margin-right: 30px;
+                        font-size: 15px;
+                        line-height: 2.25;
+                    }
+            
+                    .introduction {
+                        font-size: 22px;
+                        line-height: 1.82;
+                        letter-spacing: 1.6px;
+                        text-align: justify;
+                        margin-top: 30px;
+                    }
+            
+                    .related-text {
+                        font-size: 16px;
+                        line-height: 2.25;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+            
+                    .related-items {
+                        margin-bottom: 60px;
+                    }
+            
+                    .related-item {
+                        background-color: #e1e1e1;
+                        margin-top: 20px;
+                        padding: 20px;
+                        cursor: pointer;
+                    }
+            
+                        .related-item > img {
+                            width: 20%;
+                            vertical-align: middle;
+                        }
+            
+                        .related-item > div {
+                            display: inline-block;
+                            width: 70%;
+                            padding-left: 20px;
+                            vertical-align: middle;
+                            line-height: 1.5;
+                        }
+            
+                    footer {
+                        background-color:#DB6346;
+                        min-height: 200px;
+                        margin: 40 0 0 0
+                    }
+            
+                        footer > table {
+                            border-spacing: 45px;
+                            width: 100%;
+                        }
+            
+                    .footer-circle {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background-color: #777;
+                        margin: 0 auto;
+                    }
+            
+                    .footer-text {
+                        margin-top: 15px;
+                        font-size: 18px;
+                        text-align: center;
+                        color:#C4A39D;
+                        margin: 0 auto;
+                    }
+            
+            
+                    @media screen and (max-width: 767px) {
+                        table.hidden-on-mobile {
+                            display: none;
+                        }
+            
+                        table.shown-on-mobile {
+                            display: table;
+                        }
+                    }
+            
+                    @media screen and (min-width: 768px) {
+                        table.hidden-on-mobile {
+                            display: table;
+                            max-width: 770px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+            
+                        table.shown-on-mobile {
+                            display: none;
+                        }
+                    }
+                    @font-face { 
+              font-family: "Josefinsans";
+              src: url("JosefinSans-SemiBold.ttf"); 
             }
-
-            article,
-            article > header {
-                max-width: 678px;
-                margin: 0 auto;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            header {
-                width: 900px;
-            }
-
-            article,
-            article > header {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-        }
-
-        header > table {
-            width: 100%;
-        }
-
-        article > header > span {
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 2.25;
-        }
-
-        article > header > h1 {
-            margin-top: 11px;
-            font-size: 34px;
-            font-weight: bold;
-            line-height: 1.32;
-        }
-
-        article {
-            color: #2d2d2d;
-        }
-
-            article > figure {
-                margin: 40px 0 0 0;
-            }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            article > figure {
-                width: 678px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .float-right {
-                float: left;
-                width: 300px;
-                margin-top: 40px;
-                margin-right: 40px;
-                margin-bottom: 50px;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            article > figure {
-                width: 900px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .float-right {
-                float: right;
-                width: 360px;
-                margin-top: 40px;
-                margin-left: 40px;
-                margin-bottom: 50px;
-            }
-        }
-
-        article > p,
-        article > h2,
-        article > blockquote,
-        article > ul,
-        article figcaption,
-        article > div,
-        article > header {
-            max-width: calc(270/320*100%);
-            margin: 0 auto;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            article > p,
-            article > h2,
-            article > blockquote,
-            article > ul,
-            article figcaption,
-            article > div,
-            article > header,
-            article > ul {
-                width: 550px;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            article > p,
-            article > h2,
-            article > blockquote,
-            article > ul,
-            article figcaption,
-            article > div,
-            article > header {
-                max-width: 756px;
-            }
-
-            article > ul {
-                width: 700px;
-            }
-        }
-
-        article > ul {
-            width: 100%;
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        article > p,
-        article > blockquote {
-            font-size: 18px;
-            line-height: 2.0;
-            letter-spacing: 0.9px;
-            margin-top: 40px;
-        }
-
-        article > blockquote {
-            padding-left: 21px;
-            color: #6d6d6d;
-            border-left: 1px solid #6d6d6d;
-        }
-
-        article > h2 {
-            font-size: 22px;
-            font-weight: bold;
-            letter-spacing: 1.1px;
-            line-height: 1.64;
-            margin-top: 40px;
-        }
-
-        article figcaption {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.8px;
-            color: #6d6d6d;
-            margin-top: 15px;
-        }
-
-        .header {
-            margin-top: 35px;
-            margin-bottom: 35px;
-        }
-
-        .logo {
-            width: 100px;
-            height: 25px;
-            background-color: #e1e1e1;
-        }
-
-        .menu {
-            width: 22px;
-            height: 22px;
-            background-color: #e1e1e1;
-        }
-
-        .author {
-            margin-right: 30px;
-            font-size: 15px;
-            line-height: 2.25;
-        }
-
-        .introduction {
-            font-size: 22px;
-            line-height: 1.82;
-            letter-spacing: 1.6px;
-            text-align: justify;
-            margin-top: 30px;
-        }
-
-        .related-text {
-            font-size: 16px;
-            line-height: 2.25;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .related-items {
-            margin-bottom: 60px;
-        }
-
-        .related-item {
-            background-color: #e1e1e1;
-            margin-top: 20px;
-            padding: 20px;
-            cursor: pointer;
-        }
-
-            .related-item > img {
-                width: 20%;
-                vertical-align: middle;
-            }
-
-            .related-item > div {
-                display: inline-block;
-                width: 70%;
-                padding-left: 20px;
-                vertical-align: middle;
-                line-height: 1.5;
-            }
-
-        footer {
-            background-color: #E37E4B;
-            min-height: 200px;
-        }
-
-            footer > table {
-                border-spacing: 45px;
-                width: 100%;
-            }
-
-        .footer-circle {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #777;
-            margin: 0 auto;
-        }
-
-        .footer-text {
-            margin-top: 15px;
-            font-size: 18px;
-            text-align: center;
-            color: white;
-            margin: 0 auto;
-        }
-
-
-        @media screen and (max-width: 767px) {
-            table.hidden-on-mobile {
-                display: none;
-            }
-
-            table.shown-on-mobile {
-                display: table;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            table.hidden-on-mobile {
-                display: table;
-                max-width: 770px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            table.shown-on-mobile {
-                display: none;
-            }
-        }
+            
+                   @font-face {
+                       font-family:"PingFang-Bold";
+                       src:url("PingFang-Bold-1.ttf");
+                   }
+            
+                   @font-face{
+                       font-family:"PingFang-Jian-ChangGuiTi";
+                       src:url("PingFang-Jian-ChangGuiTi-2.ttf");
+                   }
+            
+                   .mycss{
+                       font-family:"Josefinsans";
+                       font-size:20px;     
+                   }
+                   .h1{
+                       font-family:"PingFang-Bold";
+                       color:#DB6346;
+                   }
+                   .span{
+                       color:#665D5D;
+                       font-family:"PingFang-Bold";
+                       font-size:20px;
+                   }
+                   .p{
+                       font-family:"PingFang-Jian-ChangGuiTi";
+                       color:#665D5D;
+                   }
 
 .video-container {
             position: relative;
@@ -322,17 +356,15 @@
                                 <td>
                                     <img src="logo.png" style="width:200px" />
                                 </td>
-                             </tr>
-                            <tr>
-                                <td>
-                                   <div></div>
-                                </td>
                                 <td style="width:300px;">
-                                    <div style="position:absolute">
-                                        <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;">New</a>
-                                        <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;">Popular</a>
-                                        <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;">Opinion</a>
-                                        <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;">Video</a>
+                                        <div style="position:absolute"></div>
+                                        <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;" class="mycss">New </a>
+                                        &emsp;
+                                        <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;" class="mycss">Popular</a>
+                                        &emsp;
+                                        <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;" class="mycss">Opinion</a>
+                                        &emsp;
+                                        <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;" class="mycss">Video</a>
                                     </div>
                                 </td>
                             </tr>
@@ -340,39 +372,60 @@
                         </tbody>
                     </table>
                 </header>
-                <header>
-                        <span>疊杯</span>
-                        <h1 style="color:#2F4F4F">疊杯運動好入手，首屆運動會引風潮。</h1>
-                </header>
+                
                 <article>
-<div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HUZ0VUQjYNU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-<p>
+                        <figure>
+                                <img src="疊杯1.jpg" alt="疊杯1" style="max-width:100%;margin:0 0 20 0" />
+                            </figure>
+      <header>
+            <h1 class="h1">疊杯運動好入手，首屆運動會引風潮</h1>
+            <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="span">文／曾智怡 劉祐齊　攝影／龐家姍</span>
+                            </td>
+                            <td style="width:160px;">
+                                
+                                    <img src="超連結.png" style="width:20px">
+                                    &emsp;
+                                    <a href="http://www.unews.nccu.edu.tw/unews/%E7%96%8A%E6%9D%AF%E9%81%8B%E5%8B%95%E5%A5%BD%E5%85%A5%E6%89%8B-%E9%A6%96%E5%B1%86%E9%81%8B%E5%8B%95%E6%9C%83%E5%BC%95%E9%A2%A8%E6%BD%AE/" style="position:relative;"><img src="news-microphone.png" style="width:20px"></a>
+                                    &emsp;
+                                    <a href="https://www.facebook.com/pg/unewsonline/posts/?ref=page_internal" style="position:relative;"><img src="facebook.png" style="width:20px"></a>
+                                    &emsp;
+                                    <img src="like.png" style="width:20px">
+                                
+                            </td>
+                         </tr>
+        
+                    </tbody>
+                </table>
+    </header>
+<p class="p">
     【記者曾智怡、劉祐齊新北報導】疊得好、收得快！2016中華競技疊杯第一屆全民運動會在板橋江翠國中登場，吸引了超過五百位選手同場較量。疊杯運動除了受到小孩的喜愛，許多爺爺奶奶也摩拳擦掌躍躍欲試。
 </p>
-<p>
+<p class="p">
     疊杯除了提供一個新的運動選項，同時帶給民眾許多好處，民眾林韋伶表示：「我覺得疊杯這個活動對小孩子真的還蠻有幫助的，然後希望全民、可以變成全民運動，然後大家一起多學疊杯，然後真的可以促進小孩子很多優勢。」而民眾賴月美則說：「學了以後，（上課）大家相處更樂融跟快活。」
 </p>
-<p>
+<p class="p">
     疊杯運動因為規則簡單、好入手，又不受場地限制，至2010年在台灣發展，至今已推廣到235所學校。中華競技疊杯運動推廣協會朱雅芳說：「我們目前在台灣，疊杯成立了六年，那在各個學校都有課後社團那以及老人的銀髮中心、關懷協會都有在推動疊杯。」
 </p>
-<p>
+<p class="p">
     首屆疊杯運動會圓滿落幕，主辦單位期望透過賽事活動，吸引更多人一同感受疊杯的魅力。而有趣的賽事及疊杯，更讓參賽小朋友更開心大喊：「我喜歡疊杯！」
 </p>
 <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HUZ0VUQjYNU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HUZ0VUQjYNU" frameborder="0" allow="autoplay; encrypted-media" style="margin:40 0 0 0" allowfullscreen></iframe>
       </div>
-<p>
+<p class="p">
     【記者曾智怡、劉祐齊新北報導】疊得好、收得快！2016中華競技疊杯第一屆全民運動會在板橋江翠國中登場，吸引了超過五百位選手同場較量。疊杯運動除了受到小孩的喜愛，許多爺爺奶奶也摩拳擦掌躍躍欲試。
 </p>
-<p>
+<p class="p">
     疊杯除了提供一個新的運動選項，同時帶給民眾許多好處，民眾林韋伶表示：「我覺得疊杯這個活動對小孩子真的還蠻有幫助的，然後希望全民、可以變成全民運動，然後大家一起多學疊杯，然後真的可以促進小孩子很多優勢。」而民眾賴月美則說：「學了以後，（上課）大家相處更樂融跟快活。」
 </p>
-<p>
+<p class="p">
     疊杯運動因為規則簡單、好入手，又不受場地限制，至2010年在台灣發展，至今已推廣到235所學校。中華競技疊杯運動推廣協會朱雅芳說：「我們目前在台灣，疊杯成立了六年，那在各個學校都有課後社團那以及老人的銀髮中心、關懷協會都有在推動疊杯。」
 </p>
-<p>
+<p class="p">
     首屆疊杯運動會圓滿落幕，主辦單位期望透過賽事活動，吸引更多人一同感受疊杯的魅力。而有趣的賽事及疊杯，更讓參賽小朋友更開心大喊：「我喜歡疊杯！」
 </p>
 </article>
