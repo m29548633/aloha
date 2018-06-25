@@ -2,299 +2,333 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
-    <style>
+        <style>
 
-        * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
+                * {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+        
+                body {
+                    font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+                    background-color:#FFFAFA;
+                }
+        
+                a {
+                    color: #2d2d2d;
+                    text-decoration: none;
+                }
+        
+                header,
+                article > header {
+                    max-width: calc(270/320*100%);
+                    margin: 0 auto;
+                }
+        
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    header {
+                        width: 678px;
+                    }
+        
+                    article,
+                    article > header {
+                        max-width: 678px;
+                        margin: 0 auto;
+                    }
+                }
+        
+                @media screen and (min-width: 1024px) {
+                    header {
+                        width: 900px;
+                    }
+        
+                    article,
+                    article > header {
+                        max-width: 900px;
+                        margin: 0 auto;
+                    }
+                }
+        
+                header > table {
+                    width: 100%;
+                }
+        
+                article > header > span {
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 2.25;
+                }
+        
+                article > header > h1 {
+                    margin-top: 11px;
+                    font-size: 34px;
+                    font-weight: bold;
+                    line-height: 1.32;
+                }
+        
+                article {
+                    color: #2d2d2d;
+                }
+        
+                    article > figure {
+                        margin: 0 0 0 0;
+                    }
+        
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    article > figure {
+                        width: 678px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+        
+                    .float-right {
+                        float: left;
+                        width: 300px;
+                        margin-top: 40px;
+                        margin-right: 40px;
+                        margin-bottom: 50px;
+                    }
+                }
+        
+                @media screen and (min-width: 1024px) {
+                    article > figure {
+                        width: 900px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+        
+                    .float-right {
+                        float: right;
+                        width: 360px;
+                        margin-top: 40px;
+                        margin-left: 40px;
+                        margin-bottom: 50px;
+                    }
+                }
+        
+                article > p,
+                article > h2,
+                article > blockquote,
+                article > ul,
+                article figcaption,
+                article > div,
+                article > header {
+                    max-width: calc(270/320*100%);
+                    margin: 0 auto;
+                }
+        
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    article > p,
+                    article > h2,
+                    article > blockquote,
+                    article > ul,
+                    article figcaption,
+                    article > div,
+                    article > header,
+                    article > ul {
+                        width: 550px;
+                    }
+                }
+        
+                @media screen and (min-width: 1024px) {
+                    article > p,
+                    article > h2,
+                    article > blockquote,
+                    article > ul,
+                    article figcaption,
+                    article > div,
+                    article > header {
+                        max-width: 756px;
+                    }
+        
+                    article > ul {
+                        width: 700px;
+                    }
+                }
+        
+                article > ul {
+                    width: 100%;
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+        
+                article > p,
+                article > blockquote {
+                    font-size: 18px;
+                    line-height: 2.0;
+                    letter-spacing: 0.9px;
+                    margin-top: 40px;
+                }
+        
+                article > blockquote {
+                    padding-left: 21px;
+                    color: #6d6d6d;
+                    border-left: 1px solid #6d6d6d;
+                }
+        
+                article > h2 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    letter-spacing: 1.1px;
+                    line-height: 1.64;
+                    margin-top: 40px;
+                }
+        
+                article figcaption {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.8px;
+                    color: #6d6d6d;
+                    margin-top: 15px;
+                }
+        
+                .header {
+                    background-color:#C4A39D;
+                }
+        
+        
+                .logo {
+                    width: 100px;
+                    height: 25px;
+                    background-color: #e1e1e1;
+                }
+        
+                .menu {
+                    width: 22px;
+                    height: 22px;
+                    background-color: #e1e1e1;
+                }
+        
+                .author {
+                    margin-right: 30px;
+                    font-size: 15px;
+                    line-height: 2.25;
+                }
+        
+                .introduction {
+                    font-size: 22px;
+                    line-height: 1.82;
+                    letter-spacing: 1.6px;
+                    text-align: justify;
+                    margin-top: 30px;
+                }
+        
+                .related-text {
+                    font-size: 16px;
+                    line-height: 2.25;
+                    text-align: center;
+                    font-weight: bold;
+                }
+        
+                .related-items {
+                    margin-bottom: 60px;
+                }
+        
+                .related-item {
+                    background-color: #e1e1e1;
+                    margin-top: 20px;
+                    padding: 20px;
+                    cursor: pointer;
+                }
+        
+                    .related-item > img {
+                        width: 20%;
+                        vertical-align: middle;
+                    }
+        
+                    .related-item > div {
+                        display: inline-block;
+                        width: 70%;
+                        padding-left: 20px;
+                        vertical-align: middle;
+                        line-height: 1.5;
+                    }
+        
+                footer {
+                    background-color:#DB6346;
+                    min-height: 200px;
+                    margin: 40 0 0 0
+                }
+        
+                    footer > table {
+                        border-spacing: 45px;
+                        width: 100%;
+                    }
+        
+                .footer-circle {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: #777;
+                    margin: 0 auto;
+                }
+        
+                .footer-text {
+                    margin-top: 15px;
+                    font-size: 18px;
+                    text-align: center;
+                    color:#C4A39D;
+                    margin: 0 auto;
+                }
+        
+        
+                @media screen and (max-width: 767px) {
+                    table.hidden-on-mobile {
+                        display: none;
+                    }
+        
+                    table.shown-on-mobile {
+                        display: table;
+                    }
+                }
+        
+                @media screen and (min-width: 768px) {
+                    table.hidden-on-mobile {
+                        display: table;
+                        max-width: 770px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+        
+                    table.shown-on-mobile {
+                        display: none;
+                    }
+                }
+                @font-face { 
+          font-family: "Josefinsans";
+          src: url("JosefinSans-SemiBold.ttf"); 
         }
-
-        body {
-            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-            background-color: #fff;
-        }
-
-        a {
-            color: #2d2d2d;
-            text-decoration: none;
-        }
-
-        header,
-        article > header {
-            max-width: calc(270/320*100%);
-            margin: 0 auto;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            header {
-                width: 678px;
-            }
-
-            article,
-            article > header {
-                max-width: 678px;
-                margin: 0 auto;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            header {
-                width: 900px;
-            }
-
-            article,
-            article > header {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-        }
-
-        header > table {
-            width: 100%;
-        }
-
-        article > header > span {
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 2.25;
-        }
-
-        article > header > h1 {
-            margin-top: 11px;
-            font-size: 34px;
-            font-weight: bold;
-            line-height: 1.32;
-        }
-
-        article {
-            color: #2d2d2d;
-        }
-
-            article > figure {
-                margin: 40px 0 0 0;
-            }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            article > figure {
-                width: 678px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .float-right {
-                float: left;
-                width: 300px;
-                margin-top: 40px;
-                margin-right: 40px;
-                margin-bottom: 50px;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            article > figure {
-                width: 900px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .float-right {
-                float: right;
-                width: 360px;
-                margin-top: 40px;
-                margin-left: 40px;
-                margin-bottom: 50px;
-            }
-        }
-
-        article > p,
-        article > h2,
-        article > blockquote,
-        article > ul,
-        article figcaption,
-        article > div,
-        article > header {
-            max-width: calc(270/320*100%);
-            margin: 0 auto;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            article > p,
-            article > h2,
-            article > blockquote,
-            article > ul,
-            article figcaption,
-            article > div,
-            article > header,
-            article > ul {
-                width: 550px;
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            article > p,
-            article > h2,
-            article > blockquote,
-            article > ul,
-            article figcaption,
-            article > div,
-            article > header {
-                max-width: 756px;
-            }
-
-            article > ul {
-                width: 700px;
-            }
-        }
-
-        article > ul {
-            width: 100%;
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        article > p,
-        article > blockquote {
-            font-size: 18px;
-            line-height: 2.0;
-            letter-spacing: 0.9px;
-            margin-top: 40px;
-        }
-
-        article > blockquote {
-            padding-left: 21px;
-            color: #6d6d6d;
-            border-left: 1px solid #6d6d6d;
-        }
-
-        article > h2 {
-            font-size: 22px;
-            font-weight: bold;
-            letter-spacing: 1.1px;
-            line-height: 1.64;
-            margin-top: 40px;
-        }
-
-        article figcaption {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.8px;
-            color: #6d6d6d;
-            margin-top: 15px;
-        }
-
-        .header {
-            margin-top: 35px;
-            margin-bottom: 35px;
-        }
-
-        .logo {
-            width: 100px;
-            height: 25px;
-            background-color: #e1e1e1;
-        }
-
-        .menu {
-            width: 22px;
-            height: 22px;
-            background-color: #e1e1e1;
-        }
-
-        .author {
-            margin-right: 30px;
-            font-size: 15px;
-            line-height: 2.25;
-        }
-
-        .introduction {
-            font-size: 22px;
-            line-height: 1.82;
-            letter-spacing: 1.6px;
-            text-align: justify;
-            margin-top: 30px;
-        }
-
-        .related-text {
-            font-size: 16px;
-            line-height: 2.25;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .related-items {
-            margin-bottom: 60px;
-        }
-
-        .related-item {
-            background-color: #e1e1e1;
-            margin-top: 20px;
-            padding: 20px;
-            cursor: pointer;
-        }
-
-            .related-item > img {
-                width: 20%;
-                vertical-align: middle;
-            }
-
-            .related-item > div {
-                display: inline-block;
-                width: 70%;
-                padding-left: 20px;
-                vertical-align: middle;
-                line-height: 1.5;
-            }
-
-        footer {
-            background-color: #E37E4B;
-            min-height: 200px;
-        }
-
-            footer > table {
-                border-spacing: 45px;
-                width: 100%;
-            }
-
-        .footer-circle {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #777;
-            margin: 0 auto;
-        }
-
-        .footer-text {
-            margin-top: 15px;
-            font-size: 18px;
-            text-align: center;
-            color: white;
-            margin: 0 auto;
-        }
-
-
-        @media screen and (max-width: 767px) {
-            table.hidden-on-mobile {
-                display: none;
-            }
-
-            table.shown-on-mobile {
-                display: table;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            table.hidden-on-mobile {
-                display: table;
-                max-width: 770px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            table.shown-on-mobile {
-                display: none;
-            }
-        }
-    </style>
+        
+               @font-face {
+                   font-family:"PingFang-Bold";
+                   src:url("PingFang-Bold-1.ttf");
+               }
+        
+               @font-face{
+                   font-family:"PingFang-Jian-ChangGuiTi";
+                   src:url("PingFang-Jian-ChangGuiTi-2.ttf");
+               }
+        
+               .mycss{
+                   font-family:"Josefinsans";
+                   font-size:20px;     
+               }
+               .h1{
+                   font-family:"PingFang-Bold";
+                   color:#DB6346;
+               }
+               .span{
+                   color:#665D5D;
+                   font-family:"PingFang-Bold";
+                   font-size:20px;
+               }
+               .p{
+                   font-family:"PingFang-Jian-ChangGuiTi";
+                   color:#665D5D;
+               }
+        
+            </style>
     </head>
     <body>
             <header class="header">
@@ -304,17 +338,16 @@
                                 <td>
                                     <img src="logo.png" style="width:200px" />
                                 </td>
-                             </tr>
-                            <tr>
-                                <td>
-                                   <div></div>
-                                </td>
+            
                                 <td style="width:300px;">
-                                    <div style="position:absolute">
-                                        <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;">New</a>
-                                        <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;">Popular</a>
-                                        <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;">Opinion</a>
-                                        <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;">Video</a>
+                                        <div style="position:absolute"></div>
+                                        <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;" class="mycss">New </a>
+                                        &emsp;
+                                        <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;" class="mycss">Popular</a>
+                                        &emsp;
+                                        <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;" class="mycss">Opinion</a>
+                                        &emsp;
+                                        <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;" class="mycss">Video</a>
                                     </div>
                                 </td>
                             </tr>
@@ -322,53 +355,72 @@
                         </tbody>
                     </table>
                 </header>
-                <header>
-                        <span>冰球</span>
-                        <h1 style="color:#2F4F4F">冰球場上展默契，戰神隊大獲全勝。</h1>
-                </header>
+                
                 <article>
                         <figure>
-                                <img src="冰球1.jpg" alt="冰球1" style="width:100%" />
-                                <figcaption>我是圖說啦幹！</figcaption>
+                                <img src="冰球1.jpg" alt="冰球1" style="max-width:100%;margin:0 0 20 0" />
                             </figure>
-<p>
+                            <header>
+                                    <h1 class="h1">冰球場上展默契，戰神隊大獲全勝</h1>
+                                    <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="span">文／攝影　邱品懿</span>
+                                                    </td>
+                                                    <td style="width:160px;">
+                                                        
+                                                            <img src="超連結.png" style="width:20px">
+                                                            &emsp;
+                                                            <a href="http://www.unews.nccu.edu.tw/unews/%E5%86%B0%E7%90%83%E5%A0%B4%E4%B8%8A%E5%B1%95%E9%BB%98%E5%A5%91%E3%80%80%E6%88%B0%E7%A5%9E%E9%9A%8A%E5%A4%A7%E7%8D%B2%E5%85%A8%E5%8B%9D/" style="position:relative;"><img src="news-microphone.png" style="width:20px"></a>
+                                                            &emsp;
+                                                            <a href="https://www.facebook.com/pg/unewsonline/posts/?ref=page_internal" style="position:relative;"><img src="facebook.png" style="width:20px"></a>
+                                                            &emsp;
+                                                            <img src="like.png" style="width:20px">
+                                                        
+                                                    </td>
+                                                 </tr>
+                                
+                                            </tbody>
+                                        </table>
+                            </header>
+<p class="p">
     【記者邱品懿台北報導】「105學年度全國冰球錦標賽」公開組賽事3日於台北小巨蛋開打，「戰神隊」一路過關斬將獲得冠軍。戰神隊與常勝軍「銀色野獸隊」皆由「台北銀色野獸冰球俱樂部」培育，創立初期即有優異成績，聘請外國教練後球技更上層樓。
 </p>
-<p>
+<p class="p">
     戰神隊在首場、第二場比賽都以高分領先對手。第三場對上友隊銀色野獸，雙方3：3平手進入延長賽，戰神隊最後一棒選手射門得分獲得此場勝利。冠軍戰則對上一樣拿到三連勝的「台北颱風隊」，第一節由颱風隊先得1分，戰神隊15號選手隨後進攻得分；第二節和第三節戰神隊持續搶分，並守下颱風隊所有的球，最終以4：1拿下公開組冠軍。
 </p>
-<p>
+<p class="p">
     台北銀色野獸冰球俱樂部以往將球員依表現與經驗分為銀色野獸隊和戰神隊。今年為了平均實力，而改變分組方式，將球員打散分配。戰神隊前鋒、銘傳大學廖偉傑認為，銀獸隊雖有實力較出眾的球員，但缺乏溝通、失去比賽步調；相反戰神隊球員間的配合更加融洽、得分輕鬆。
 </p>
-<p>
+<p class="p">
     在球員數不足需併隊的情形下，銀獸俱樂部仍能組成兩支隊伍，且是比賽的常勝軍。俱樂部創立初期，練習方式便是土法煉鋼，沒有特殊方法。最大轉折從聘請到匈牙利教練克里斯多夫（Kristof）開始。克里斯多夫將自己在國外學習冰球的制度帶到銀獸、了解每個人的長處，並在比賽中及時告訴球員錯誤的地方同時給予建議。戰神隊前鋒、國立台北科技大學徐毅成表示，比賽上自己看不到的地方，由教練點出來並調配、調動，能讓球員在當下發揮最大的功能。
 </p>
-<p>
+<p class="p">
     另外冰球選手大多從小練起。俱樂部總教練蔡柏全表示，台灣從小學習直排輪的人很多，但學到一定時間就要開始選擇要走的方向，如花式、競速、曲棍球或者是學業。徐毅成小學開始學習滑輪，「有一天在河濱溜直排輪，看到滑輪曲棍球隊的練習，被問要不要加入。」徐毅成加入球隊後一打就是七年，雖然在基測、學測時曾經中斷，但準備完考試，還是都馬上回歸球場。
 </p>
-<p>
+<p class="p">
     冰球速度快且常有衝撞動作，對男生來說已經是很大的體力消耗，女子球員要做到一樣的程度就必須更加努力。銀獸隊守門員、真理大學劉安祐從幼稚園開始接觸冰球，擔任守門員的位置從沒變過。劉安祐小時候被球打到、被撞，都會忍住不說，回家爸媽才發現大塊瘀青，送去醫院還被懷疑是家暴。劉安祐把比賽上受的傷、撞出的瘀青視為紀念品，「算是一種另類的回憶吧？」多年的練習讓她已經習慣碰撞與瘀青。
 </p>
 <figure>
-        <img src="冰球2.jpg" alt="冰球2" style="width:100%" />
-        <figcaption>我是圖說啦幹！</figcaption>
+        <img src="冰球2.jpg" alt="冰球2" style="width:100%;margin:40 0 0 0" />
     </figure>
-<p>
+<p class="p">
         【記者邱品懿台北報導】「105學年度全國冰球錦標賽」公開組賽事3日於台北小巨蛋開打，「戰神隊」一路過關斬將獲得冠軍。戰神隊與常勝軍「銀色野獸隊」皆由「台北銀色野獸冰球俱樂部」培育，創立初期即有優異成績，聘請外國教練後球技更上層樓。
     </p>
-    <p>
+    <p class="p">
         戰神隊在首場、第二場比賽都以高分領先對手。第三場對上友隊銀色野獸，雙方3：3平手進入延長賽，戰神隊最後一棒選手射門得分獲得此場勝利。冠軍戰則對上一樣拿到三連勝的「台北颱風隊」，第一節由颱風隊先得1分，戰神隊15號選手隨後進攻得分；第二節和第三節戰神隊持續搶分，並守下颱風隊所有的球，最終以4：1拿下公開組冠軍。
     </p>
-    <p>
+    <p class="p">
         台北銀色野獸冰球俱樂部以往將球員依表現與經驗分為銀色野獸隊和戰神隊。今年為了平均實力，而改變分組方式，將球員打散分配。戰神隊前鋒、銘傳大學廖偉傑認為，銀獸隊雖有實力較出眾的球員，但缺乏溝通、失去比賽步調；相反戰神隊球員間的配合更加融洽、得分輕鬆。
     </p>
-    <p>
+    <p class="p">
         在球員數不足需併隊的情形下，銀獸俱樂部仍能組成兩支隊伍，且是比賽的常勝軍。俱樂部創立初期，練習方式便是土法煉鋼，沒有特殊方法。最大轉折從聘請到匈牙利教練克里斯多夫（Kristof）開始。克里斯多夫將自己在國外學習冰球的制度帶到銀獸、了解每個人的長處，並在比賽中及時告訴球員錯誤的地方同時給予建議。戰神隊前鋒、國立台北科技大學徐毅成表示，比賽上自己看不到的地方，由教練點出來並調配、調動，能讓球員在當下發揮最大的功能。
     </p>
-    <p>
+    <p class="p">
         另外冰球選手大多從小練起。俱樂部總教練蔡柏全表示，台灣從小學習直排輪的人很多，但學到一定時間就要開始選擇要走的方向，如花式、競速、曲棍球或者是學業。徐毅成小學開始學習滑輪，「有一天在河濱溜直排輪，看到滑輪曲棍球隊的練習，被問要不要加入。」徐毅成加入球隊後一打就是七年，雖然在基測、學測時曾經中斷，但準備完考試，還是都馬上回歸球場。
     </p>
-    <p>
+    <p class="p">
         冰球速度快且常有衝撞動作，對男生來說已經是很大的體力消耗，女子球員要做到一樣的程度就必須更加努力。銀獸隊守門員、真理大學劉安祐從幼稚園開始接觸冰球，擔任守門員的位置從沒變過。劉安祐小時候被球打到、被撞，都會忍住不說，回家爸媽才發現大塊瘀青，送去醫院還被懷疑是家暴。劉安祐把比賽上受的傷、撞出的瘀青視為紀念品，「算是一種另類的回憶吧？」多年的練習讓她已經習慣碰撞與瘀青。
     </p>
     </article>
