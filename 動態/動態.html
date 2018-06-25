@@ -3,22 +3,36 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
-    <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="new.css">
 
     <title>動態網頁</title>
 
     <style>
         .animation-block {
-            animation-fill-mode: both;
+            animation-fill-mode:  backwards;
             animation-play-state: paused;
         }
 
         .to-animate {
             animation-fill-mode: both;
             animation-play-state: running;
+        }
+
+        @media (max-width:1440px) {
+            .col-12 {
+                padding-left: 10rem;
+                padding-right: 10rem;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .col-12 h3 {
+                text-align: center;
+                margin-bottom: .5rem;
+            }
         }
 
         @media (max-width: 635px) {
@@ -29,31 +43,25 @@
             .engineer-icon-area img:last-child {
                 width: 50px;
             }
+            .col-12 {
+                padding-right: 5rem;
+                padding-left: 5rem;
+            }
         }
 
         @media (max-width: 480px) {
             .display-4 {
-                font-size: 32;
-            }
-            .lead {
-                font-size: 12.5;
+                font-size: 3rem;
             }
         }
 
-        /* @media (min-width: 1280px) {
-            .col-12 p {
-                margin-left: 30rem;
-                margin-right:30rem;
+        @media (max-width: 400px) {
+            .col-12 {
+                padding-right: 2rem;
+                padding-left: 2rem;
             }
-
-        } */
-
-            
-        @media (max-width: 412px) {
-            .col-12 p {
-                margin-left: 0;
-                margin-right: 0;
-                font-size:20px;
+            .display-4 {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -88,6 +96,7 @@
                     </div>
                     <div class="col-12">
                         <h3>水電技師人數VS每年考照人數</h3>
+                        <img src="水電技師.png">
                     </div>
                     <div class="col-12">
                         <p>
@@ -142,6 +151,7 @@
                         <h3>
                             各業受雇員工總薪資
                         </h3>
+                        <img src="各業受雇.png">
                     </div>
                     <div class="col-12">
                         <h3>
@@ -153,11 +163,8 @@
                     </div>
                     <div class="col-12 two-col">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h3>高職畢業後規劃</h3>
-                            </div>
-                            <div class="col-md-6">
-                                <h3>不願從事水電技術工的原因</h3>
+                            <div class="col-md-12">
+                                <img src="高職畢業規劃.png">
                             </div>
                         </div>
                     </div>
@@ -174,13 +181,10 @@
                     </div>
                     <div class="col-12 two-col">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h3>目前有規劃考電相關證照的打算嗎</h3>
+                            <div class="col-md-12">
+                                <img src="目前有規劃.png">
                             </div>
-                            <div class="col-md-6">
-                                <h3>如果有考證照，最主要的目的為何</h3>
-                            </div>
-                        </div>
+                    </div>
                     </div>
                     <div class="col-12">
                         <p>
@@ -223,47 +227,42 @@
 
     </div>
 
-    <!-- 以下的程式碼是用來計算 <div id="area-*"> 是否出現在 viewport 裡，如果在 viewport 裡，則在會增加 to-animate 的 class 在 <div id="area-*"> 上 -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
- crossorigin="anonymous"></script>
-
-<script>
-$.fn.isInViewport = function () {
-    var elementTop = $(this)
-        .offset()
-        .top;
-    var elementBottom = elementTop + $(this)
-        .outerHeight();
-
-    var viewportTop = $(window)
-        .scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-
-$(window)
-    .on('resize scroll', function () {
-        $('.animation-block')
-            .each(function () {
-                var activeArea = $(this)
-                    .attr('id');
-                if ($(this)
-                    .isInViewport()) {
-                    $('#' + activeArea)
-                        .addClass('to-animate');
-                }
-            });
-    });
-</script>
 
 
-   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
+    <script>
+        $.fn.isInViewport = function () {
+            var elementTop = $(this)
+                .offset()
+                .top;
+            var elementBottom = elementTop + $(this)
+                .outerHeight();
+
+            var viewportTop = $(window)
+                .scrollTop();
+            var viewportBottom = viewportTop + window.innerHeight/2;
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+
+        $(window)
+            .on('resize scroll', function () {
+                $('.animation-block')
+                    .each(function () {
+                        var activeArea = $(this)
+                            .attr('id');
+                        if ($(this)
+                            .isInViewport()) {
+                            $('#' + activeArea)
+                                .addClass('to-animate');
+                        }
+                    });
+            });
+    </script>
 </body>
 
 
