@@ -435,7 +435,8 @@ left: 90%;
 }
 
 .dropdown a {
-    color:#DB6346
+    color:#DB6346;
+    font-family:"JosefinSans";
 }
 
 .nav-link {
@@ -446,6 +447,7 @@ left: 90%;
 
 .navbar-light .navbar-nav .nav-link {
     color:#DB6346;
+    font-family:"JosefinSans";
 }
 
 .imgdiv {
