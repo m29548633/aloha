@@ -465,7 +465,17 @@ left: 90%;
     margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1440px) {
+    .card-deck {
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: 400px;
+        margin-left: 400px;
+        margin-top: 40;
+    }
+    }
+
+@media (min-width: 576px) and (max-width:1440) {
 .card-deck {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -494,7 +504,7 @@ left: 90%;
 }
 
 .card-text {
-    color:gray;
+    color:#DB6346;
     font-size: 14px;
 }
 
@@ -506,4 +516,11 @@ left: 90%;
     background-attachment:scroll;
     background-repeat:no-repeat;
     background-position:42% 50%; /*設定小圖案的位置，可自行調整*/
+}
+
+
+.card-title {
+    margin-bottom: .75rem;
+    color: #665D5D;
+    font-family: "PingFang-Bold"
 }
