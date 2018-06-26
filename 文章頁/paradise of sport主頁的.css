@@ -263,7 +263,7 @@ article figcaption {
 footer {
     background-color:#DB6346;
     min-height: 200px;
-    margin: 40 0 0 0
+    margin: 0 0 0 0;
 }
 
     footer > table {
@@ -524,3 +524,34 @@ left: 90%;
     color: #665D5D;
     font-family: "PingFang-Bold"
 }
+
+.mainpage {
+    background-color:#665D5D;
+    max-width: 100%;
+    margin-top:40px;
+    
+}
+
+.mainpage p {
+    color :#C4A39D;
+    font-family:"JosefinSans";
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0;
+    
+    
+}
+
+.imagebutton{
+    border-radius: 999rem;
+    width: 300px;
+    height: 300px;
+    font-family: "JosefinSans-SemiBold";
+    color:#C4A39D;
+    font-weight:bold;
+    margin:0 auto;
+}
+
+
+
+
