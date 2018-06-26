@@ -28,6 +28,10 @@
     }
 }
 
+table {
+    border-collapse: inherit;
+}
+
 body {
     font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
     background-color:#FFFAFA;
@@ -268,10 +272,8 @@ footer {
     }
 
 .footer-circle {
-    width: 36px;
+    width: 100px;
     height: 36px;
-    border-radius: 50%;
-    background-color: #777;
     margin: 0 auto;
 }
 
@@ -455,3 +457,4 @@ left: 90%;
 .img1st {
     max-width:100%;
 }
+
