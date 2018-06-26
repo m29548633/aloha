@@ -3,37 +3,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
     <title>鐵人三項-Paradise of sport</title>
-    <link rel="stylesheet" href="style鐵人.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style文章頁.css">
     <style>
+      
+
 
     </style>
 </head>
 <body>
     <header class="header">
-        <table>
+
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="paradise of sport.html">
+                        <img src="logo.png" alt="logo" style="width:200px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="#">New <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Opinion</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Video</a>
+                        </li>
+                      </ul>
+                      <li class="nav-item dropdown" style="list-style: none">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Topic
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">三鐵</a>
+                              <a class="dropdown-item" href="#">冰球</a>
+                              <a class="dropdown-item" href="#">跆拳道</a>
+                              <a class="dropdown-item" href="#">疊杯</a>
+                            </div>
+                        </li>
+                     
+                    </div>
+            </nav>
+
+        <!-- <table class="hidden-on-mobile">
             <tbody>
-                <tr>
+                <tr >
                     <td>
-                        <img src="logo.png" style="width:200px" />
+                        <img src="logo.png" class="logoimg"/>
                     </td>
                     <td>
-                            <a href="三鐵.html" style="position:relative;margin-left:250px" class="mycss">New </a>
-                            
-                            <a href="跆拳道.html" style="position:relative;margin-left:15px" class="mycss">Popular</a>
-                            
-                            <a href="冰球.html" style="position:relative;margin-left:15px" class="mycss">Opinion</a>
-                            
-                            <a href="疊杯.html" style="position:relative;margin-left:15px" class="mycss">Video</a>
-                            </td>
+                            <a href="三鐵.html"  class="mycss">New </a>
+                    </td>
+                    <td>       
+                            <a href="跆拳道.html"  class="mycss">Popular</a>
+                    </td>
+                    <td>         
+                            <a href="冰球.html"  class="mycss">Opinion</a>
+                    </td>   
+                    <td>  
+                            <a href="疊杯.html"  class="mycss">Video</a>
+                    </td> 
                     <td>
                         <ul class="drop-down-menu">
                                 <li>
                                     <a href="#" class="mycss">Topic</a>
                                     <ul>
-                                        <li><a href="#" class="topic in">三鐵</a></li>
-                                        <li><a href="#" class="topic in">冰球</a></li>
-                                        <li><a href="#" class="topic in">跆拳道</a></li>
-                                        <li><a href="#" class="topic in">疊杯</a></li>
+                                        <li><a href="三鐵.html" class="topic in">三鐵</a></li>
+                                        <li><a href="冰球.html" class="topic in">冰球</a></li>
+                                        <li><a href="跆拳道.html" class="topic in">跆拳道</a></li>
+                                        <li><a href="疊杯.html" class="topic in">疊杯</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -42,15 +89,56 @@
 
             </tbody>
         </table>
+        <table class="shown-on-mobile">
+                <tbody>
+                    <tr >
+                        <td>
+                            <img src="logo.png" class="logoimg"/>
+                        </td>
+                    </tr>    
+                    <tr class="mycss2">    
+                        <td>
+                                <a href="三鐵.html"  >New </a>
+                        </td>
+                        <td>       
+                                <a href="跆拳道.html"  >Popular</a>
+                        </td>
+                        <td>         
+                                <a href="冰球.html"  >Opinion</a>
+                        </td>   
+                        <td>  
+                                <a href="疊杯.html"  >Video</a>
+                        </td> 
+                        <td>
+                            <ul class="drop-down-menu">
+                                    <li>
+                                        <a href="#" class="mycss">Topic</a>
+                                        <ul>
+                                            <li><a href="三鐵.html" class="topic in">三鐵</a></li>
+                                            <li><a href="冰球.html" class="topic in">冰球</a></li>
+                                            <li><a href="跆拳道.html" class="topic in">跆拳道</a></li>
+                                            <li><a href="疊杯.html" class="topic in">疊杯</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </td>
+                     </tr>
+    
+                </tbody>
+            </table> -->
     </header>
+
+    <div class="imgdiv">
+        <img src="三鐵1.jpg" alt="三鐵1" class="img1st" >
+    </div>
 
 
     <article>
-        <figure>
-            <img src="三鐵1.jpg" alt="三鐵1" style="max-width:100%;margin:0 0 20 0" />
-        </figure>
+       
+    
+        
         <header>
-            <h1 class="h1">勢不可擋，張團畯制霸台東三鐵</h1>
+            <h1 class="hh1">勢不可擋，張團畯制霸台東三鐵</h1>
             <table>
                 <tbody>
                     <tr>
@@ -58,7 +146,6 @@
                             <span class="span">文／攝影　張碩</span>
                         </td>
                         <td style="width:160px;">
-                            
                                 <img src="超連結.png" style="width:20px">
                                 &emsp;
                                 <a href="http://www.unews.nccu.edu.tw/unews/2016%E5%8F%B0%E6%9D%B1%E4%B9%8B%E7%BE%8E%E9%90%B5%E4%BA%BA%E4%B8%89%E9%A0%85%E5%9C%8B%E9%9A%9B%E8%B3%BD%E5%8D%8A%E7%A8%8B%E8%B6%85%E9%90%B5113k%EF%BC%88f%E7%A8%BF%EF%BC%89/" style="position:relative;"><img src="news-microphone.png" style="width:20px"></a>
@@ -164,6 +251,10 @@
             </table>
         </table>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 </body>
 
