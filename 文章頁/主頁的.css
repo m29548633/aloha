@@ -497,3 +497,13 @@ left: 90%;
     color:gray;
     font-size: 14px;
 }
+
+.fullpost{
+    width:100%;
+    text-align:center; /*設定「繼續閱讀」置中*/
+    margin-top:30px; /*設定與文章的距離，可自行調整*/
+    font-size:12px; /*設定字體大小，可自行調整*/
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+    background-position:42% 50%; /*設定小圖案的位置，可自行調整*/
+}
