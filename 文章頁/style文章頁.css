@@ -460,3 +460,7 @@ left: 90%;
     max-width:100%;
 }
 
+.mr-auto, .mx-auto {
+    margin-right: 8 !important;
+    margin-left: auto;
+}
