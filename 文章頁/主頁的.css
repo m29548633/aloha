@@ -465,4 +465,35 @@ left: 90%;
     margin-left: auto;
 }
 
+@media (min-width: 576px) {
+.card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 40;
+}
+}
 
+@media (max-width:576px) {
+    .imgdiv{
+        display: none;
+    }
+    .card-deck .card {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 14px;
+}
+
+.card-text {
+    color:gray;
+    font-size: 14px;
+}
