@@ -3,362 +3,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
         <title>Paradise of sport</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style文章頁.css">
         <style>
 
-                * {
-                    -webkit-box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-        
-                body {
-                    font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", Roboto, "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-                    background-color:#FFFAFA;
-                }
-        
-                a {
-                    color: #2d2d2d;
-                    text-decoration: none;
-                }
-        
-                header,
-                article > header {
-                    max-width: calc(270/320*100%);
-                    margin: 0 auto;
-                }
-        
-                @media screen and (min-width: 768px) and (max-width: 1023px) {
-                    header {
-                        width: 678px;
-                    }
-        
-                    article,
-                    article > header {
-                        max-width: 678px;
-                        margin: 0 auto;
-                    }
-                }
-        
-                @media screen and (min-width: 1024px) {
-                    header {
-                        width: 900px;
-                    }
-        
-                    article,
-                    article > header {
-                        max-width: 900px;
-                        margin: 0 auto;
-                    }
-                }
-        
-                header > table {
-                    width: 100%;
-                }
-        
-                article > header > span {
-                    font-size: 16px;
-                    font-weight: bold;
-                    line-height: 2.25;
-                }
-        
-                article > header > h1 {
-                    margin-top: 11px;
-                    font-size: 34px;
-                    font-weight: bold;
-                    line-height: 1.32;
-                }
-        
-                article {
-                    color: #2d2d2d;
-                }
-        
-                    article > figure {
-                        margin: 0 0 0 0;
-                    }
-        
-                @media screen and (min-width: 768px) and (max-width: 1023px) {
-                    article > figure {
-                        width: 678px;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-        
-                    .float-right {
-                        float: left;
-                        width: 300px;
-                        margin-top: 40px;
-                        margin-right: 40px;
-                        margin-bottom: 50px;
-                    }
-                }
-        
-                @media screen and (min-width: 1024px) {
-                    article > figure {
-                        width: 900px;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-        
-                    .float-right {
-                        float: right;
-                        width: 360px;
-                        margin-top: 40px;
-                        margin-left: 40px;
-                        margin-bottom: 50px;
-                    }
-                }
-        
-                article > p,
-                article > h2,
-                article > blockquote,
-                article > ul,
-                article figcaption,
-                article > div,
-                article > header {
-                    max-width: calc(270/320*100%);
-                    margin: 0 auto;
-                }
-        
-                @media screen and (min-width: 768px) and (max-width: 1023px) {
-                    article > p,
-                    article > h2,
-                    article > blockquote,
-                    article > ul,
-                    article figcaption,
-                    article > div,
-                    article > header,
-                    article > ul {
-                        width: 550px;
-                    }
-                }
-        
-                @media screen and (min-width: 1024px) {
-                    article > p,
-                    article > h2,
-                    article > blockquote,
-                    article > ul,
-                    article figcaption,
-                    article > div,
-                    article > header {
-                        max-width: 756px;
-                    }
-        
-                    article > ul {
-                        width: 700px;
-                    }
-                }
-        
-                article > ul {
-                    width: 100%;
-                    list-style-type: none;
-                    padding-left: 0;
-                }
-        
-                article > p,
-                article > blockquote {
-                    font-size: 18px;
-                    line-height: 2.0;
-                    letter-spacing: 0.9px;
-                    margin-top: 40px;
-                }
-        
-                article > blockquote {
-                    padding-left: 21px;
-                    color: #6d6d6d;
-                    border-left: 1px solid #6d6d6d;
-                }
-        
-                article > h2 {
-                    font-size: 22px;
-                    font-weight: bold;
-                    letter-spacing: 1.1px;
-                    line-height: 1.64;
-                    margin-top: 40px;
-                }
-        
-                article figcaption {
-                    font-size: 16px;
-                    line-height: 1.5;
-                    letter-spacing: 0.8px;
-                    color: #6d6d6d;
-                    margin-top: 15px;
-                }
-        
-                .header {
-                    background-color:#C4A39D;
-                }
-        
-        
-                .logo {
-                    width: 100px;
-                    height: 25px;
-                    background-color: #e1e1e1;
-                }
-        
-                .menu {
-                    width: 22px;
-                    height: 22px;
-                    background-color: #e1e1e1;
-                }
-        
-                .author {
-                    margin-right: 30px;
-                    font-size: 15px;
-                    line-height: 2.25;
-                }
-        
-                .introduction {
-                    font-size: 22px;
-                    line-height: 1.82;
-                    letter-spacing: 1.6px;
-                    text-align: justify;
-                    margin-top: 30px;
-                }
-        
-                .related-text {
-                    font-size: 16px;
-                    line-height: 2.25;
-                    text-align: center;
-                    font-weight: bold;
-                }
-        
-                .related-items {
-                    margin-bottom: 60px;
-                }
-        
-                .related-item {
-                    background-color: #e1e1e1;
-                    margin-top: 20px;
-                    padding: 20px;
-                    cursor: pointer;
-                }
-        
-                    .related-item > img {
-                        width: 20%;
-                        vertical-align: middle;
-                    }
-        
-                    .related-item > div {
-                        display: inline-block;
-                        width: 70%;
-                        padding-left: 20px;
-                        vertical-align: middle;
-                        line-height: 1.5;
-                    }
-        
-                footer {
-                    background-color:#DB6346;
-                    min-height: 200px;
-                    margin: 40 0 0 0
-                }
-        
-                    footer > table {
-                        border-spacing: 45px;
-                        width: 100%;
-                    }
-        
-                .footer-circle {
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 50%;
-                    background-color: #777;
-                    margin: 0 auto;
-                }
-        
-                .footer-text {
-                    margin-top: 15px;
-                    font-size: 18px;
-                    text-align: center;
-                    color:#C4A39D;
-                    margin: 0 auto;
-                }
-        
-        
-                @media screen and (max-width: 767px) {
-                    table.hidden-on-mobile {
-                        display: none;
-                    }
-        
-                    table.shown-on-mobile {
-                        display: table;
-                    }
-                }
-        
-                @media screen and (min-width: 768px) {
-                    table.hidden-on-mobile {
-                        display: table;
-                        max-width: 770px;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-        
-                    table.shown-on-mobile {
-                        display: none;
-                    }
-                }
-                @font-face { 
-          font-family: "Josefinsans";
-          src: url("JosefinSans-SemiBold.ttf"); 
-        }
-        
-               @font-face {
-                   font-family:"PingFang-Bold";
-                   src:url("PingFang-Bold-1.ttf");
-               }
-        
-               @font-face{
-                   font-family:"PingFang-Jian-ChangGuiTi";
-                   src:url("PingFang-Jian-ChangGuiTi-2.ttf");
-               }
-        
-               .mycss{
-                   font-family:"Josefinsans";
-                   font-size:20px;     
-               }
-               .h1{
-                   font-family:"PingFang-Bold";
-                   color:#DB6346;
-               }
-               .span{
-                   color:#665D5D;
-                   font-family:"PingFang-Bold";
-                   font-size:20px;
-               }
-               .p{
-                   font-family:"PingFang-Jian-ChangGuiTi";
-                   color:#665D5D;
-               }
+          
         
             </style>
     </head>
     <body>
             <header class="header">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="logo.png" style="width:200px" />
-                                </td>
-                                <td style="width:300px;">
-                                    <div style="position:absolute"></div>
-                                        <a href="https://www.youtube.com/watch?v=QqjjclzXBpI" style="position:relative;" class="mycss">New </a>
-                                        &emsp;
-                                        <a href="https://www.youtube.com/watch?v=Yr27kzm-4xc" style="position:relative;" class="mycss">Popular</a>
-                                        &emsp;
-                                        <a href="https://www.youtube.com/watch?v=MrQ1aNBhMu4" style="position:relative;" class="mycss">Opinion</a>
-                                        &emsp;
-                                        <a href="https://www.youtube.com/watch?v=sZl8xEcSZ4I" style="position:relative;" class="mycss">Video</a>
-                                    </div>
-                                </td>
-                             </tr>
-            
-                        </tbody>
-                    </table>
+                    
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="paradise of sport.html">
+                        <img src="logo.png" alt="logo" style="width:200px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="三鐵.html" >New <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="冰球.html" >Popular</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="跆拳道.html" >Opinion</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="疊杯.html" >Video</a>
+                        </li>
+                      </ul>
+                      <li class="nav-item dropdown" style="list-style: none">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Topic
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="三鐵.html">三鐵</a>
+                              <a class="dropdown-item" href="冰球.html">冰球</a>
+                              <a class="dropdown-item" href="跆拳道.html">跆拳道</a>
+                              <a class="dropdown-item" href="疊杯.html">疊杯</a>
+                            </div>
+                        </li>
+                     
+                    </div>
+            </nav>
                 </header>
-                <article>
-                        <figure>
-                            <img src="跑步.png" alt="跑步" style="max-width:100%;margin:0 0 20 0" />
-                        </figure>
+                <div class="imgdiv">
+                        <img src="跑步.png" alt="跑步" class="img1st" >
+                    </div>  
+                      
         
 
     </body>
