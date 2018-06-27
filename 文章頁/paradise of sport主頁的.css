@@ -267,7 +267,7 @@ footer {
 }
 
     footer > table {
-        border-spacing: 45px;
+        border-spacing: 20px;
         width: 100%;
     }
 
@@ -282,7 +282,7 @@ footer {
     font-size: 18px;
     text-align: center;
     color:#C4A39D;
-    margin: 0 auto;
+    margin:30 5;
 }
 
 
