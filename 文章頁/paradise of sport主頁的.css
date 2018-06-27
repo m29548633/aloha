@@ -437,6 +437,7 @@ left: 90%;
 .dropdown a {
     color:#DB6346;
     font-family:"JosefinSans";
+    font-size:25px;
 }
 
 .nav-link {
@@ -448,6 +449,7 @@ left: 90%;
 .navbar-light .navbar-nav .nav-link {
     color:#DB6346;
     font-family:"JosefinSans";
+    font-size:25px;
 }
 
 .imgdiv {
@@ -494,8 +496,10 @@ left: 90%;
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 15px;
+        
     }
 }
+
 
 .card-body {
     -ms-flex: 1 1 auto;
@@ -544,12 +548,13 @@ left: 90%;
 
 .imagebutton{
     border-radius: 999rem;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     font-family: "JosefinSans-SemiBold";
     color:#C4A39D;
     font-weight:bold;
     margin:0 auto;
+    padding:0;
 }
 
 

@@ -347,6 +347,7 @@ src: url("JosefinSans-SemiBold.ttf");
 .hh1{
    font-family:"PingFang-Bold";
    color:#DB6346;
+   margin:40 0 0 0;
 }
 .span{
    color:#665D5D;
@@ -437,6 +438,7 @@ left: 90%;
 .dropdown a {
     color:#DB6346;
     font-family:"JosefinSans";
+    font-size:25px;
 }
 
 .nav-link {
@@ -448,6 +450,7 @@ left: 90%;
 .navbar-light .navbar-nav .nav-link {
     color:#DB6346;
     font-family:"JosefinSans";
+    font-size:25px;
 }
 
 .imgdiv {
@@ -458,6 +461,11 @@ left: 90%;
 
 .img1st {
     max-width:100%;
+}
+
+.img2nd{
+    max-width:100%;
+    margin:40 0 0 0;
 }
 
 .mr-auto, .mx-auto {
