@@ -344,3 +344,134 @@ body {
     bottom: 54%;
     animation-delay: 2.5s;
 }
+
+/* ----------------------動態3--------------------- */
+
+.ab3 {
+    padding-bottom: 50%;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+.ani3bar{
+    position: absolute;
+    bottom: 0;
+    left: 16%;
+    width: 72%;
+}
+
+.coins{
+    width:4%;
+    position: absolute;
+}
+.plumber{
+    width:4.3%;
+    position: absolute;
+    left:56%;
+    bottom:12%;
+    animation-duration: 2s;
+}
+
+.ab3 .clickme {
+    display: none;
+    position: absolute;
+    width: 7%;
+    bottom:8%;
+    right: 38.3%;
+}
+
+
+
+
+/* ----------------------------------column啦 */
+.ab3 .column1{
+    left: 25%;
+}
+.ab3 .column2{
+    left: 34.5%;
+}
+.ab3 .column3{
+    left: 44%;
+}
+.ab3 .column4{
+    left: 56%;
+}
+.ab3 .column5{
+    left: 68%;
+}
+.ab3 .column6{
+    left: 77.5%;
+}
+
+
+
+/* ---------------------------------------row啦 */
+.ab3 .row1{
+    
+    bottom: 26%;
+    animation-delay: .5s;
+}
+.ab3 .row2{
+    
+    bottom: 31%;
+    animation-delay: .7s;
+}
+.ab3 .row3{
+    
+    bottom: 36%;
+    animation-delay: .9s;
+}
+.ab3 .row4{
+    
+    bottom: 41%;
+    animation-delay: 1.1s;
+}
+.ab3 .row5{
+    
+    bottom: 46%;
+    animation-delay: 1.3s;
+}
+.ab3 .row6{
+    
+    bottom: 51%;
+    animation-delay: 1.5s;
+}
+.ab3 .row7{
+    
+    bottom: 56%;
+    animation-delay: 1.7s;
+}
+.ab3 .row8{
+    
+    bottom: 61%;
+    animation-delay: 1.9s;
+}
+.ab3 .row9{
+    
+    bottom: 66%;
+    animation-delay: 2.1s;
+}
+
+
+/* ----------------------動態4--------------------- */
+.ab4 {
+    padding-bottom: 50%;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+
+.ab4 .leftcir {
+    position: absolute;
+    width:33%;
+    bottom:8%;
+    left:30%;
+}
+.ab4 .rightcir {
+    position: absolute;
+    width:14.5%;
+    bottom:52%;
+    left:47.35%;
+}
