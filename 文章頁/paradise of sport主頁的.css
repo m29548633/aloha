@@ -261,8 +261,8 @@ article figcaption {
     }
 
 footer {
-    background-color:#DB6346;
-    min-height: 200px;
+    background-color:#C4A39D;
+    min-height: 100px;
     margin: 0 0 0 0;
 }
 
@@ -281,7 +281,7 @@ footer {
     margin-top: 15px;
     font-size: 18px;
     text-align: center;
-    color:#C4A39D;
+    color:#DB6346;
     margin:30 5;
 }
 
