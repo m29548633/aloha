@@ -76,11 +76,11 @@ body {
     text-align: center;
 }
 .engineer-icon-area img {
-    width: 64px;
-    height: 64px;
+    width: 8%;
+    height: auto;
 }
 .engineer-icon-area img:last-child {
-    width: 100px;
+    width: 8%;
 }
 .engineer-icon-area div {
     margin-bottom: 30px;
@@ -95,29 +95,64 @@ body {
     animation-delay: 1.3s;
 }
 .tag {
+    width:10%;
     animation-delay: 1.8s;
 }
-.engineer-icon-area .exp {
+.engineer-icon-area .expbig {
     position: absolute;
     width: 0;
-    height: 150px;
+    height: auto;
     transition: all .5s;
-    top:-43px;
-    right: 0;
+    top:10%;
+    right: 5%;
 }
+.engineer-icon-area .expmid {
+    position: absolute;
+    width: 0;
+    height: auto;
+    transition: all .5s;
+    top:10%;
+    right: 7%;
+}
+.engineer-icon-area .expsmall {
+    position: absolute;
+    width: 0;
+    height: auto;
+    transition: all .5s;
+    top:10%;
+    right: 5%;
+}
+
+
 .engineer-icon-area .big:hover .big-exp {
-    width: 300px;
+    width: 35%;
     display: block;
 }
 .engineer-icon-area .mid:hover .mid-exp {
-    width: 300px;
+    width: 25%;
     display: block;
+    
 }
 .engineer-icon-area .small:hover .small-exp {
-    width: 300px;
+    width: 20%;
     display: block;
 }
-
+.col-12 .ani2title {
+    position: absolute;
+    width: 27%;
+    left: 6.5%;
+    top:0;
+    padding-top:3%;
+}
+.aniblockpaddingplus{
+    padding-left:10rem;
+    padding-right: 10rem;
+   
+}
+.engineer-icon-area .intro{
+    position:absolute;
+    width:8%;
+}
 /* ----------------------動態1--------------------- */
 
 .aniblockpadding{
@@ -380,6 +415,14 @@ body {
     bottom:8%;
     right: 38.3%;
 }
+.ab3 .clickme0 {
+    /* display: none; */
+    position: absolute;
+    width: 7%;
+    bottom:8%;
+    right: 38.3%;
+    animation-duration: 2s;
+}
 
 
 
@@ -465,13 +508,267 @@ body {
 
 .ab4 .leftcir {
     position: absolute;
-    width:33%;
+    width:36%;
     bottom:8%;
-    left:30%;
+    left:25%;
 }
 .ab4 .rightcir {
     position: absolute;
-    width:14.5%;
-    bottom:52%;
-    left:47.35%;
+    width:16%;
+    bottom:47%;
+    left:46%;
 }
+
+/* ----------------------動態5--------------------- */
+.ab5 {
+    padding-bottom: 50%;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.ani5title1 {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 20%;
+}
+.ani5title2 {
+    position: absolute;
+    top: 0;
+    right: 12%;
+    width: 26%;
+}
+
+.ab5 .downcir {
+    position: absolute;
+    width:31%;
+    bottom:20%;
+    left:0;
+}
+.ab5 .upcir {
+    position: absolute;
+    width:22%;
+    bottom:58%;
+    left:0;
+}
+.ab5 icons{
+    position: absolute;
+    width:25%;
+}
+.ab5 .digit{
+    position: absolute;
+    width:8%;
+}
+.ab5 .digit2{
+    position: absolute;
+    width:6%;
+}
+.ab5 .poop{
+    position: absolute;
+    width:50%;
+}
+.ab5 .poop2{
+    position: absolute;
+    width:40%;
+}
+.ab5 .poop3{
+    position: absolute;
+    width:20%;
+}
+.ab5 .column1{
+    position: absolute;
+    left: 43%;
+    animation-delay: 1s;
+}
+.ab5 .column2{
+    position: absolute;
+    left: 53%;
+    animation-delay: 1.3s;
+}
+
+.ab5 .column3{
+    position: absolute;
+    right: 28%;
+    animation-delay: 2s;
+}
+.ab5 .column4{
+    position: absolute;
+    right: 8%;
+    animation-delay: 2s;
+}
+.ab5 .column5{
+    position: absolute;
+    right: 0%;
+    animation-delay: 2s;
+}
+.ab5 .row1{
+    position: absolute;
+    top:68%;
+}
+.ab5 .row2{
+    position: absolute;
+    top:45%;
+}
+.ab5 .row3{
+    position: absolute;
+    top:20%;
+}
+.ab5 .rrow1{
+    position: absolute;
+    top:75%;
+}
+.ab5 .rrow2{
+    position: absolute;
+    top:48%;
+}
+.ab5 .rrow3{
+    position: absolute;
+    top:23%;
+}
+.ab5 .rrrow1{
+    position: absolute;
+    top:73%;
+}
+.ab5 .rrrow2{
+    position: absolute;
+    top:46%;
+}
+.ab5 .rrrow3{
+    position: absolute;
+    top:21%;
+}
+/* --------------------------------------------重作動態2 */
+/* .ab2 {
+    padding-bottom: 50%;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+}
+.ab2 .icon{
+    position:absolute;
+    width:8%
+}
+.ab2 .icon2{
+    position:absolute;
+    width:8%;
+    animation-delay: 1.8s
+}
+.ab2 .icon3{
+    position:absolute;
+    width:20%;
+    
+}
+.ab2 .icon4{
+    position:absolute;
+    width:25%;
+    
+}
+.ab2 .icon5{
+    position:absolute;
+    width:35%;
+    
+}
+
+
+
+.ab2 .column1{
+    position:absolute;
+    left:17%
+}
+.ab2 .column2{
+    position:absolute;
+    left:28%
+}
+.ab2 .column3{
+    position:absolute;
+    left:39%
+}
+.ab2 .column4{
+    position:absolute;
+    left:50%
+}
+.ab2 .column5{
+    position:absolute;
+    left:61%
+}
+.ab2 .column6{
+    position:absolute;
+    left:72%
+}
+
+.ab2 .col1{
+    position:absolute;
+    left:48%;
+    
+}
+.ab2 .col2{
+    position:absolute;
+    left:57%;
+    
+}
+.ab2 .col3{
+    position:absolute;
+    left:68%;
+    
+}
+.ab2 .col4{
+    position:absolute;
+    left:57%;
+}
+.ab2 .col5{
+    position:absolute;
+    left:66%;
+}
+.ab2 .col6{
+    position:absolute;
+    left:77%;
+}
+
+.ab2 .row1{
+    position:absolute;
+    bottom:10%;
+    animation-delay: .5s;
+}
+.ab2 .row2{
+    position:absolute;
+    bottom:30%;
+    animation-delay: .7s;
+}
+.ab2 .row3{
+    position:absolute;
+    bottom:50%;
+    animation-delay: .9s;
+}
+.ab2 .rrow1{
+    position:absolute;
+    bottom:23%;
+    animation-delay: .5s;
+}
+.ab2 .rrow2{
+    position:absolute;
+    bottom:42%;
+    animation-delay: .7s;
+}
+.ab2 .rrow3{
+    position:absolute;
+    bottom:65%;
+    animation-delay: .9s;
+}
+
+.ab2 .rrrow1{
+    position:absolute;
+    bottom:18%;
+    animation-delay: .5s;
+}
+.ab2 .rrrow2{
+    position:absolute;
+    bottom:44%;
+    animation-delay: .7s;
+}
+.ab2 .rrrow3{
+    position:absolute;
+    bottom:65%;
+    animation-delay: .9s;
+} */
+
