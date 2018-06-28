@@ -2,6 +2,12 @@ body {
     font-family: "Microsoft JhengHei" !important;
     
 }
+
+.display-4 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
 .animated {
     animation-fill-mode: inherit;
 	animation-play-state: inherit;
@@ -14,8 +20,8 @@ body {
     background-size: cover;
     background-repeat : no-repeat;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
     margin-bottom: 0 ;
 }
 .jumbotron h1 {

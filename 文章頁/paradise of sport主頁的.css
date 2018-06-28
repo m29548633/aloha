@@ -501,6 +501,8 @@ left: 90%;
 }
 
 
+
+
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -555,6 +557,18 @@ left: 90%;
     font-weight:bold;
     margin:0 auto;
     padding:0;
+}
+@media (max-width:576px) {
+    .imagebutton{
+        border-radius: 999rem;
+        width: 150px;
+        height: 150px;
+        font-family: "JosefinSans-SemiBold";
+        color:#C4A39D;
+        font-weight:bold;
+        margin:0 auto;
+        padding:0;
+    }
 }
 
 
