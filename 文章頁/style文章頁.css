@@ -263,7 +263,7 @@ article figcaption {
 footer {
     background-color:#C4A39D;
     min-height: 100px;
-    margin: 40 0 0 0
+    margin: 40 0 0 0;
 }
 
     footer > table {
