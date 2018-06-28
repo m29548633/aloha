@@ -2,6 +2,10 @@ body {
     font-family: "Microsoft JhengHei" !important;
     
 }
+.lead {
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 .display-4 {
     font-size: 5.5rem;
@@ -20,8 +24,8 @@ body {
     background-size: cover;
     background-repeat : no-repeat;
     text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 5%;
+    padding-bottom: 2%;
     margin-bottom: 0 ;
 }
 .jumbotron h1 {
@@ -75,8 +79,9 @@ body {
     padding: 0;
 }
 .col-12 li {
-    color: gray;
+    color: white;
     margin-bottom: 10px;
+    font-size:0.5rem;
 }
 .engineer-icon-area {
     text-align: center;
@@ -558,10 +563,7 @@ body {
     bottom:58%;
     left:0;
 }
-.ab5 icons{
-    position: absolute;
-    width:25%;
-}
+
 .ab5 .digit{
     position: absolute;
     width:8%;
@@ -584,6 +586,7 @@ body {
 }
 .ab5 .column1{
     position: absolute;
+    width:10%;
     left: 43%;
     animation-delay: 1s;
 }
@@ -644,137 +647,4 @@ body {
     position: absolute;
     top:21%;
 }
-/* --------------------------------------------重作動態2 */
-/* .ab2 {
-    padding-bottom: 50%;
-    position: relative;
-    padding-right: 0;
-    padding-left: 0;
-}
-.ab2 .icon{
-    position:absolute;
-    width:8%
-}
-.ab2 .icon2{
-    position:absolute;
-    width:8%;
-    animation-delay: 1.8s
-}
-.ab2 .icon3{
-    position:absolute;
-    width:20%;
-    
-}
-.ab2 .icon4{
-    position:absolute;
-    width:25%;
-    
-}
-.ab2 .icon5{
-    position:absolute;
-    width:35%;
-    
-}
-
-
-
-.ab2 .column1{
-    position:absolute;
-    left:17%
-}
-.ab2 .column2{
-    position:absolute;
-    left:28%
-}
-.ab2 .column3{
-    position:absolute;
-    left:39%
-}
-.ab2 .column4{
-    position:absolute;
-    left:50%
-}
-.ab2 .column5{
-    position:absolute;
-    left:61%
-}
-.ab2 .column6{
-    position:absolute;
-    left:72%
-}
-
-.ab2 .col1{
-    position:absolute;
-    left:48%;
-    
-}
-.ab2 .col2{
-    position:absolute;
-    left:57%;
-    
-}
-.ab2 .col3{
-    position:absolute;
-    left:68%;
-    
-}
-.ab2 .col4{
-    position:absolute;
-    left:57%;
-}
-.ab2 .col5{
-    position:absolute;
-    left:66%;
-}
-.ab2 .col6{
-    position:absolute;
-    left:77%;
-}
-
-.ab2 .row1{
-    position:absolute;
-    bottom:10%;
-    animation-delay: .5s;
-}
-.ab2 .row2{
-    position:absolute;
-    bottom:30%;
-    animation-delay: .7s;
-}
-.ab2 .row3{
-    position:absolute;
-    bottom:50%;
-    animation-delay: .9s;
-}
-.ab2 .rrow1{
-    position:absolute;
-    bottom:23%;
-    animation-delay: .5s;
-}
-.ab2 .rrow2{
-    position:absolute;
-    bottom:42%;
-    animation-delay: .7s;
-}
-.ab2 .rrow3{
-    position:absolute;
-    bottom:65%;
-    animation-delay: .9s;
-}
-
-.ab2 .rrrow1{
-    position:absolute;
-    bottom:18%;
-    animation-delay: .5s;
-}
-.ab2 .rrrow2{
-    position:absolute;
-    bottom:44%;
-    animation-delay: .7s;
-}
-.ab2 .rrrow3{
-    position:absolute;
-    bottom:65%;
-    animation-delay: .9s;
-} */
 
